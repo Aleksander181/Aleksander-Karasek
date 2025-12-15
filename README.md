@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  
-   
+    <meta charset="UTF-8">
+    <title>Zadanie 2 – Wymiana koła w samochodzie</title>
 </head>
-<body>
-    <h1>Aleksander Karasek</h1>
+<body style="font-family: Arial;">
+
+    <!-- Nagłówki -->
+    <h1>Wymiana koła w samochodzie</h1>
+    <h2>Instrukcja krok po kroku</h2>
+
+    <hr>
+
+    <!-- Paragraf, nowa linia, formatowanie czcionki -->
+    <p>
+        Wymiana koła to <b>podstawowa umiejętność</b>, którą powinien znać każdy kierowca.<br>
+        Należy zachować <i>ostrożność</i> oraz stosować się do zasad <u>bezpieczeństwa</u>.<br>
+        Przykład indeksu górnego: ciśnienie 2<sup>2</sup> bar<br>
+        Przykład indeksu dolnego: CO<sub>2</sub>
+    </p>
+
+    <!-- Kolor, wielkość i krój czcionki -->
+    <p style="color: darkred; font-size: 18px; font-family: 'Times New Roman';">
+        Przed rozpoczęciem upewnij się, że samochód stoi na równym i stabilnym podłożu.
+    </p>
+
+    <hr>
+
+    <!-- Lista wypunktowana (kwadrat) -->
+    <h3>Potrzebne narzędzia</h3>
+    <ul style="list-style-type: square;">
+        <li>Klucz do kół</li>
+        <li>Podnośnik samochodowy</li>
+        <li>Koło zapasowe</li>
+    </ul>
+
+    <!-- Lista numerowana A, B, C -->
+    <h3>Kolejność czynności</h3>
+    <ol type="A">
+        <li>Poluzuj śruby</li>
+        <li>Podnieś samochód</li>
+        <li>Zamontuj koło zapasowe</li>
+    </ol>
+
+    <!-- Lista definicji -->
+    <h3>Pojęcia</h3>
+    <dl>
+        <dt>Podnośnik</dt>
+        <dd>Urządzenie do unoszenia pojazdu</dd>
+        <dt>Koło zapasowe</dt>
+        <dd>Dodatkowe koło na wypadek awarii</dd>
+        <dt>Śruby</dt>
+        <dd>Elementy mocujące koło do piasty</dd>
+    </dl>
+
+    <hr>
+
+    <!-- Tabela -->
+    <h3>Etapy wymiany koła</h3>
+    <table border="1" width="70%" style="border-collapse: collapse; text-align: center;">
+        <tr style="background-color: lightgray;">
+            <th>Etap</th>
+            <th>Opis</th>
+            <th>Uwagi</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Przygotowanie</td>
+            <td>Zatrzymaj pojazd</td>
+            <td>Włącz światła awaryjne</td>
+        </tr>
+        <tr>
+            <td>Zaciągnij hamulec ręczny</td>
+            <td>Bezpieczeństwo</td>
+        </tr>
+        <tr>
+            <td>Demontaż</td>
+            <td colspan="2">Odkręć śruby i zdejmij uszkodzone koło</td>
+        </tr>
+        <tr>
+            <td>Montaż</td>
+            <td>Załóż koło zapasowe</td>
+            <td>Dokręć śruby</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Link -->
+    <p>
+        Materiały pomocnicze:
+        <a href="https://www.w3schools.com/html/" target="_blank">HTML – W3Schools</a>
+    </p>
+
 </body>
 </html>
-
-
