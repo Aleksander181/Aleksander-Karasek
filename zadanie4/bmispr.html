@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+
+<h2>Kalkulator BMI</h2>
+
+<form>
+    Waga (kg):<br>
+    <input type="number" id="waga"><br><br>
+
+    Wzrost (cm):<br>
+    <input type="number" id="wzrost"><br><br>
+
+    <input type="button" value="Oblicz BMI" onclick="obliczBMI()">
+</form>
+
+<p id="wynik"></p>
+
+<script>
+function obliczBMI() {
+    var waga = parseFloat(document.getElementById("waga").value);
+    var wzrost = parseFloat(document.getElementById("wzrost").value);
+
+    // Walidacja danych
+    if (isNaN(waga) || isNaN(wzrost)) {
+        document.getElementById("wynik").innerHTML = "Uzupełnij wszystkie pola.";
+        return;
+    }
+
+    if (waga <= 0 || waga >= 200) {
+        document.getElementById("wynik").innerHTML = "Waga musi być z zakresu 0–200 kg.";
+        return;
+    }
+
+    if (wzrost <= 100 || wzrost >= 250) {
+        document.getElementById("wynik").innerHTML = "Wzrost musi być z zakresu 100–250 cm.";
+        return;
+    }
+
+    // zamiana cm na metry
+    wzrost = wzrost / 100;
+
+    var bmi = waga / (wzrost * wzrost);
+    var opis = "";
+
+    if (bmi < 18.5) {
+        opis = "Niedowaga";
+    } else if (bmi < 25) {
+        opis = "Waga prawidłowa";
+    } else if (bmi < 30) {
+        opis = "Nadwaga";
+    } else {
+        opis = "Otyłość";
+    }
+
+    document.getElementById("wynik").innerHTML =
+        "Twoje BMI: " + bmi.toFixed(2) + "<br>" +
+        "Klasyfikacja: " + opis;
+}
+</script>
+
+</body>
+</html>
